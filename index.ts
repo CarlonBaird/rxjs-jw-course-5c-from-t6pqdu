@@ -18,4 +18,5 @@ const observableFromPromise$ = from(somePromise);
 observableFromPromise$.subscribe({
   next: (value) => console.log(value),
   complete: () => console.log('Completed'),
+  error: (err) => console.log('Error:', err),
 });
